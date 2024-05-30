@@ -1,4 +1,4 @@
-# Overview of 26 prompt principles
+# Overview of 26 prompt principles from [Atlas](https://github.com/VILA-Lab/ATLAS)
 | #Principle | Prompt Principle | Example Prompt |
 |:------------:|------------------| ---------------------|
 | 1          | If you prefer more concise answers, no need to be polite with LLM so there is no need to add phrases like “please", "if you don't mind", "thank you", "I would like to", etc., and get straight to the point. | ~~Could you kindly describe the structure of a human cell, please?~~ Describe the structure of a human cell. |
