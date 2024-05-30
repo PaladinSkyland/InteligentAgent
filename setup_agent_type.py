@@ -33,3 +33,14 @@ def setup_simple_agent(
     from langchain.agents import AgentExecutor
     agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
     return agent_executor
+
+
+from langgraph.prebuilt import chat_agent_executor
+
+def bindtoolsoverAgent(llm : Annotated[any, "The language model to be used."],
+              tools : Annotated[list, "The tools to be used."]):
+    """
+    This function binds tools to an LLM and returns an agent executor
+    """
+    agent_executor = chat_agent_executor.create_tool_calling_executor(llm, tools)
+    return agent_executor

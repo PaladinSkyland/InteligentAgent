@@ -54,6 +54,10 @@ probleme2 = """Consider a triangle ABC where angle A is 60∘, side AC has a len
     Calculate the area of triangle ABC.
     """
 
+probleme3 = """I have 3 apples and 4 oranges. I give half of my oranges away and buy two 
+dozen new ones, alongwith three packs of strawberries. Each pack of 
+strawberry has 30 strawberries. How  many total pieces of fruit do I have at 
+the end?"""
 
 print(agent.invoke(
     {"user_message": probleme1}
